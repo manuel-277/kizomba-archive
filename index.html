@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRAVADOR DE ÁUDIO MAYABIA ANGOVOZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8B0000">
+</head>
+<body>
+  <header>
+<h1>GRAVADOR DE ÁUDIO MAYABIA ANGOVOZ</h1>
+    <p>Preservando o seu talento vocal e musical</p>
+  </header>
+
+  <main>
+    <!-- Gravação de voz -->
+    <section id="voiceRecorder">
+      <h2>🎤 Gravar Voz</h2>
+      <button id="recordVoiceBtn">Gravar Voz</button>
+      <button id="stopVoiceBtn" style="display:none;">⏹️ Parar</button>
+    </section>
+
+    <!-- Gravação de música com instrumental -->
+    <section id="musicRecorder">
+      <h2>🎶 Gravar Música com Instrumental</h2>
+      <label for="instrumentalFile">Escolha um instrumental (MP3/WAV):</label>
+      <input type="file" id="instrumentalFile" accept="audio/*" />
+      <button id="recordMusicBtn">Gravar Música</button>
+      <button id="stopMusicBtn" style="display:none;">⏹️ Parar</button>
+    </section>
+
+    <!-- Bloco de Notas para Letras -->
+    <section id="lyricsSection">
+      <h2>📝 Escrever Letra</h2>
+      <textarea id="lyricsBox" placeholder="Escreva sua letra aqui..."></textarea>
+      <button id="saveLyricsBtn">Guardar Letra</button>
+    </section>
+
+    <!-- Lista de gravações -->
+    <section id="stories">
+      <h2>Memórias Gravadas</h2>
+      <ul id="storyList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por: <strong>Manuel Luciano</strong></p>
+    <p id="inspirationQuote"></p>
+    <p>© 2025 — O futuro não depende só de mim, mas de <em>nossas vozes juntas</em>.</p>
+  </footer>
+
+  <!-- Biblioteca JSZip (para ZIP offline) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

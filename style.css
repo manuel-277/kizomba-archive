@@ -1,0 +1,113 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --card: #252525;
+    --text: #f0f0f0;
+    --accent: #B22222;
+    --input-bg: #333;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f5f5;
+    --card: white;
+    --text: #333;
+    --accent: #8B0000;
+    --input-bg: white;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+section {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  margin: 10px 5px;
+}
+
+#lyricsBox {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+  margin-top: 10px;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+#storyList li {
+  padding: 15px;
+  background: var(--card);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.qr-code {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.qr-code img {
+  max-width: 150px;
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
